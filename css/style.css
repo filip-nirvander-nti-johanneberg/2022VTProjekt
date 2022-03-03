@@ -1,6 +1,7 @@
 /* Denna fil skall innehålla din CSS kod */
 #wrapper {
     border: solid black 1px;
+    height: 150vh;
 }
 
 * {
@@ -13,7 +14,7 @@ nav {
     display:flex;
     justify-content: flex-end;
     align-items: center;
-    height:10vh;
+    height:6vh;
     background-color: darkseagreen;
     font-family: sans-serif;
 }
@@ -25,8 +26,8 @@ nav {
     justify-content: space-around;
     position: absolute;
     right: 0px;
-    height: 90vh;
-    top: 10vh;
+    height: 40vh;
+    top: 6vh;
     background-color: darkseagreen;
     align-items: center;
     width: 20%;
@@ -81,5 +82,38 @@ nav {
     grid-area: nb;
 }
 
+.sections {
+    display: flex;
+}
 
 
+.sec1 {
+    height: 30vh;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sec2 {
+    height: 30vh;
+    width: 50%;
+    background-color: blueviolet;
+    display: flex;
+    align-self: center;
+    
+}
+
+.sec3 {
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    background-color: blue;
+    align-content: space-around;
+    
+}
+
+.fot1 {
+    height: 30vh;
+    
+}
