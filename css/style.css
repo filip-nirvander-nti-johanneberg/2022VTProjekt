@@ -15,7 +15,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     height:6vh;
-    background-color: darkseagreen;
+    
     font-family: sans-serif;
 }
 
@@ -28,7 +28,7 @@ nav {
     right: 0px;
     height: 40vh;
     top: 6vh;
-    background-color: darkseagreen;
+    
     align-items: center;
     width: 20%;
     transition: all 0.5s;
@@ -86,6 +86,12 @@ nav {
     display: flex;
 }
 
+.nav1 {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
 
 .sec1 {
     height: 30vh;
