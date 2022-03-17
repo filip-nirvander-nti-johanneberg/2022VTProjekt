@@ -1,5 +1,5 @@
 /* Denna fil skall innehålla din CSS kod */
-#wrapper {
+.wrapper {
     border: solid black 1px;
     height: 150vh;
 }
@@ -15,7 +15,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     height:6vh;
-    
+    background-color: antiquewhite;
     font-family: sans-serif;
 }
 
@@ -91,35 +91,17 @@ nav {
     display: flex;
     justify-content: center;
     width: 100vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    background-color: whitesmoke;
 }
 
-.sec1 {
-    height: 30vh;
-    background-color: aquamarine;
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width: 768px){
 
-}
-
-.sec2 {
-    height: 30vh;
-    width: 50%;
-    background-color: blueviolet;
-    display: flex;
-    align-self: center;
     
-}
 
-.sec3 {
-    height: 30vh;
-    width: 50%;
-    display: flex;
-    background-color: blue;
-    align-content: space-around;
-    
 }
+    
+    
 
-.fot1 {
-    height: 30vh;
-    
-}
+
