@@ -1,7 +1,8 @@
 /* Denna fil skall innehålla din CSS kod */
+
 .wrapper {
-    border: solid black 1px;
-    height: 150vh;
+    
+    height: 250vh;
 }
 
 * {
@@ -12,12 +13,113 @@
 
 nav {
     display:flex;
+    justify-content: center;
+    height: 8vh;
+    background-color: antiquewhite;
+    font-family: sans-serif;
+    width: 100%;
+    
+}
+
+.navlinks {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    width: 35vw;
+    top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+    color:darkslategrey;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight:bold;
+    font-size: 20px;
+    
+    
+    
+    
+}
+
+.navlinks li {
+    list-style: none;
+}
+
+.navlinks a {
+    color:darkslategrey;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight:bold;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.sections {
+    display: flex;
+}
+
+.head1 {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    background-color: whitesmoke;
+    grid-area: head;
+    align-items: center;
+}
+
+.sections2 {
+    display: grid;
+    grid-template-areas:
+        "sec1 sec1"
+        "sec3 sec2"
+        "fot1 fot1"
+    ;
+}
+
+.sec1 {
+    display: grid;
+    grid-area: sec1;
+    height: 70vh;
+    justify-content: center;
+}
+
+.sec2 {
+    display: grid;
+    grid-area: sec2;
+    justify-content: center;
+    height: 70vh;
+}
+
+.sec3 {
+    display: grid;
+    grid-area: sec3;
+    height: 70vh;
+    justify-content: center;
+
+}
+
+.fot1 {
+    display: grid;
+    grid-area: fot1;
+    background-color: darkolivegreen;
+    height: 52vh;
+}
+
+@media screen and (max-width: 768px){
+
+ nav {
+    display:flex;
     justify-content: flex-end;
     align-items: center;
     height:6vh;
     background-color: antiquewhite;
     font-family: sans-serif;
+        
 }
+
 
 .navlinks {
 
@@ -25,7 +127,7 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
-    right: 0px;
+    right: 10px;
     height: 40vh;
     top: 6vh;
     
@@ -82,23 +184,19 @@ nav {
     grid-area: nb;
 }
 
-.sections {
-    display: flex;
-}
-
-.nav1 {
+.head1 {
     height: 30vh;
     display: flex;
     justify-content: center;
     width: 100vw;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 25px;
     background-color: whitesmoke;
+    grid-area: head;
+    align-items: center;
 }
 
-@media screen and (min-width: 768px){
 
-    
 
 }
     
