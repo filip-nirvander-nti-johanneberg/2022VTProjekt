@@ -1,8 +1,9 @@
 /* Denna fil skall innehålla din CSS kod */
 
+
 .wrapper {
     
-    height: 250vh;
+    border: solid 1px black;
 }
 
 * {
@@ -15,10 +16,10 @@ nav {
     display:flex;
     justify-content: center;
     height: 8vh;
-    background-color: antiquewhite;
-    font-family: sans-serif;
+    background-color: rgb(27, 40, 01);
+    font-family: 'Italianno', cursive;
     width: 100%;
-    
+    position: absolute;
 }
 
 .navlinks {
@@ -28,14 +29,14 @@ nav {
     position: absolute;
     width: 35vw;
     top: 20px;
-    font-family: 'Times New Roman', Times, serif;
-
-    color:darkslategrey;
+    
+    font-family: 'Italianno', cursive;
+    color:goldenrod;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight:bold;
     font-size: 20px;
-    
+    position: absolute;
     
     
     
@@ -43,28 +44,105 @@ nav {
 
 .navlinks li {
     list-style: none;
+    
 }
 
 .navlinks a {
-    color:darkslategrey;
-    text-decoration: none;
+    color:goldenrod;
+    
     letter-spacing: 3px;
     font-weight:bold;
     font-size: 20px;
     text-decoration: underline;
+    white-space: nowrap;
+    
 }
+
+
+
+
 
 .sections {
     display: flex;
 }
 
 .head1 {
+    /*index*/
     height: 50vh;
     display: flex;
     justify-content: center;
     width: 100vw;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-family: 'Italianno', cursive;
+    font-size: 70px;
+    background-color: whitesmoke;
+    grid-area: head;
+    align-items: center;
+    
+    
+    
+    
+}
+
+.head2 {
+    /*Produkts*/
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-family: 'Italianno', cursive;
+    font-size: 35px;
+    background-color: whitesmoke;
+    grid-area: head;
+    align-items: center;
+}
+
+.head3 {
+    /*Contakt*/
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-family: 'Italianno', cursive;
+    font-size: 35px;
+    background-color: whitesmoke;
+    grid-area: head;
+    align-items: center;
+}
+
+.head4 {
+    /*tailor*/
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-family: 'Italianno', cursive;
+    font-size: 35px;
+    background-color: whitesmoke;
+    grid-area: head;
+    align-items: center;
+}
+
+.head5 {
+    /*about us*/
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-family: 'Italianno', cursive;
+    font-size: 35px;
+    background-color: whitesmoke;
+    grid-area: head;
+    align-items: center;
+}
+
+.head6 {
+    /*cart*/
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-family: 'Italianno', cursive;
+    font-size: 42px;
     background-color: whitesmoke;
     grid-area: head;
     align-items: center;
@@ -82,7 +160,7 @@ nav {
 .sec1 {
     display: grid;
     grid-area: sec1;
-    height: 70vh;
+    height: 75vh;
     justify-content: center;
 }
 
@@ -90,7 +168,7 @@ nav {
     display: grid;
     grid-area: sec2;
     justify-content: center;
-    height: 70vh;
+    height: 75vh;
 }
 
 .sec3 {
@@ -104,9 +182,71 @@ nav {
 .fot1 {
     display: grid;
     grid-area: fot1;
-    background-color: darkolivegreen;
+    background-color: rgb(27, 40, 01);
     height: 52vh;
+    
 }
+
+.paragraf1 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.produktsmain {
+    display: grid;
+    grid-template-areas:
+        "pr1 pr1"
+        "pr2 pr2"
+        "pr3 pr3"
+        "pr4 pr4"
+        "fot1 fot1"
+    ;
+}
+
+.produkts1 {
+    display: grid;
+    grid-area: pr1;
+    height: 75vh;
+    justify-content: center;
+    
+}
+
+.produkts2 {
+    display: grid;
+    grid-area: pr2;
+    height: 75vh;
+    justify-content: center;
+}
+
+.produkts3 {
+    display: grid;
+    grid-area: pr3;
+    height: 75vh;
+    justify-content: center;
+}
+
+.produkts4 {
+    display: grid;
+    grid-area: pr4;
+    height: 60vh;
+    justify-content: center;
+}
+
+.cart1 {
+    display: flex;
+}
+
+
+
+.aboutus1 {
+    display: flex;
+    justify-self: center ;
+    align-items: center;
+    padding: 10px;
+}
+
+
 
 @media screen and (max-width: 768px){
 
@@ -115,9 +255,9 @@ nav {
     justify-content: flex-end;
     align-items: center;
     height:6vh;
-    background-color: antiquewhite;
-    font-family: sans-serif;
-        
+    background-color: rgb(27, 40, 01);
+    font-family: 'Italianno', cursive;
+    
 }
 
 
@@ -130,9 +270,9 @@ nav {
     right: 10px;
     height: 40vh;
     top: 6vh;
-    
+    background-color: rgb(27, 40, 01);
     align-items: center;
-    width: 20%;
+    width: 33%;
     transition: all 0.5s;
 }
 
@@ -141,11 +281,11 @@ nav {
 }
 
 .navlinks a {
-    color:darkslategrey;
-    text-decoration: none;
+    color:goldenrod;
     letter-spacing: 3px;
     font-weight:bold;
     font-size: 20px;
+    text-decoration: underline;
 
 }
 
@@ -153,7 +293,7 @@ nav {
 .burger div {
     width: 25px;
     height:3px;
-    background-color: darkslategrey;
+    background-color: goldenrod;
     margin:5px;
     border-radius: 25%;
     transition: all 0.3s;
@@ -189,13 +329,78 @@ nav {
     display: flex;
     justify-content: center;
     width: 100vw;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Italianno', cursive;
     font-size: 25px;
     background-color: whitesmoke;
     grid-area: head;
     align-items: center;
 }
 
+.head2 {
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-family: 'Italianno', cursive;
+    font-size: 25px;
+    background-color: whitesmoke;
+    grid-area: head;
+    align-items: center;
+    
+}
+
+.head3 {
+    /*Contakt*/
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-family: 'Italianno', cursive;
+    font-size: 23px;
+    background-color: whitesmoke;
+    grid-area: head;
+    align-items: center;
+}
+
+.head4 {
+    /*tailor*/
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-family: 'Italianno', cursive;
+    font-size: 20px;
+    background-color: whitesmoke;
+    grid-area: head;
+    align-items: center;
+    
+}
+
+.head5 {
+    /*about us*/
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-family: 'Italianno', cursive;
+    font-size: 30px;
+    background-color: whitesmoke;
+    grid-area: head;
+    align-items: center;
+}
+
+.head6 {
+    /*cart*/
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-family: 'Italianno', cursive;
+    font-size: 25px;
+    background-color: whitesmoke;
+    grid-area: head;
+    align-items: center;
+}
 
 
 }
