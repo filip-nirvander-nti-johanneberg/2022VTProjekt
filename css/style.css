@@ -20,6 +20,7 @@ nav {
     font-family: 'Italianno', cursive;
     width: 100%;
     position: absolute;
+    
 }
 
 .navlinks {
@@ -146,6 +147,7 @@ nav {
     background-color: whitesmoke;
     grid-area: head;
     align-items: center;
+    
 }
 
 .sections2 {
